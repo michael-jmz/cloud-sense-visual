@@ -1,0 +1,32 @@
+<h1>Informe panorámico</h1>
+<hr>
+<app-graficas-medias (searchDate)="searchDate($event)" [averageTemperature]="averageTemperature" [averageHumidity]="averageHumidity"></app-graficas-medias>
+
+<mat-card class="tem-hum corporate-card">
+  <div>
+    <h3>A medida que <strong>aumenta la temperatura</strong>, el aire se vuelve más seco (la <strong>humedad relativa disminuye</strong>)
+    y al <strong>disminuir la temperatura</strong>, el aire se vuelve más húmedo (la <strong>humedad relativa aumenta</strong>)</h3>
+  </div>
+</mat-card>
+
+<div class="container">
+  <div class="row my-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div class="body">
+              <apx-chart
+                [series]="chartOptions.series!"
+                [chart]="chartOptions.chart!"
+                [xaxis]="chartOptions.xaxis!"
+                [title]="chartOptions.title!"
+              ></apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

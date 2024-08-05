@@ -1,0 +1,49 @@
+<h3>Filtrar datos por fecha</h3>
+
+<mat-form-field appearance="fill">
+  <mat-label>Inicio (mm/dd/aa)</mat-label>
+  <input matInput [matDatepicker]="startPicker" [(ngModel)]="startDate" >
+  <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+  <mat-datepicker #startPicker></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Fin (mm/dd/aa)</mat-label>
+  <input matInput [matDatepicker]="endPicker" [(ngModel)]="endDate">
+  <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+  <mat-datepicker #endPicker></mat-datepicker>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="generateChart()" >Buscar</button>
+
+<!-- Aquí irá tu componente de gráficos -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div id="chartTemperature">
+        <apx-chart
+          [series]="chartOptionsTemperature.series!"
+          [chart]="chartOptionsTemperature.chart!"
+          [plotOptions]="chartOptionsTemperature.plotOptions!"
+          [labels]="chartOptionsTemperature.labels!"
+          [fill]="chartOptionsTemperature.fill!"
+          [stroke]="chartOptionsTemperature.stroke!"
+        ></apx-chart>
+      </div>
+    </div>
+    <div class="col-6">
+      <div id="chartHumidity">
+        <apx-chart
+          [series]="chartOptionsHumidity.series!"
+          [chart]="chartOptionsHumidity.chart!"
+          [plotOptions]="chartOptionsHumidity.plotOptions!"
+          [labels]="chartOptionsHumidity.labels!"
+          [fill]="chartOptionsHumidity.fill!"
+          [stroke]="chartOptionsHumidity.stroke!"
+        ></apx-chart>
+      </div>
+    </div>
+  </div>
+</div>
+

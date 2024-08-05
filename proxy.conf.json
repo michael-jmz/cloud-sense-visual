@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://connectangular.azurewebsites.net",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/api"
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+
+
+<shared-nav></shared-nav>
+<mat-sidenav-container>
+  <mat-sidenav class="navLateral" [style.width]="_sidebarService.sidenavWidth()" mode="side" opened>
+    <!-- Contenido de menu lateral -->
+     <app-container-sidenav></app-container-sidenav>
+  </mat-sidenav>
+    <mat-sidenav-content class="content" [style.margin-left]="_sidebarService.sidenavWidth()">
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

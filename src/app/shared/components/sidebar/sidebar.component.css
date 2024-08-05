@@ -1,0 +1,57 @@
+/* #sidebar{
+
+  height: 100vh;  /* vh ocupe el 100 la pagina verticalmente
+} */
+/* .content {
+  padding:24px;
+}
+.navLateral{
+  width: sidenavWidth();
+}
+mat-sidenav-container{
+  height: calc(100vh - 64px);
+
+} */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 64px);
+}
+
+.content {
+  padding: 24px;
+}
+
+.navLateral {
+  width: sidenavWidth();
+}

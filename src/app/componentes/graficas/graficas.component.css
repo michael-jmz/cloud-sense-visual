@@ -1,0 +1,39 @@
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+.tem-hum {
+    background-color: #eae8e8; /* Cambia esto al color que desees */
+    padding: 20px;
+  }
+
+.mat-card div {
+  padding: 20px;
+  margin: 2px;
+}
+.corporate-card {
+  background-color: #ffffff; /* Fondo blanco */
+  border: 1px solid #e0e0e0; /* Borde gris claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 16px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  font-family: 'Arial', sans-serif; /* Fuente corporativa */
+  color: #333333; /* Color de texto principal */
+}
+
+.corporate-card h3 {
+  color: #1565C0; /* Color de encabezado azul */
+  font-size: 1.2em; /* Tamaño de fuente de encabezado */
+  margin-bottom: 12px; /* Espaciado inferior */
+}
+
+.corporate-card strong {
+  color: #0D47A1; /* Color de énfasis azul oscuro */
+}
